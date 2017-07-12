@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+func add(x int, y int) int {
+	return x + y
+}
 
 func main() {
-    fmt.Printf("hello, world\n")
+	fmt.Println("Welcome to the playground!")
+	fmt.Println("Testing an add function ", add(2, 4))
 }
