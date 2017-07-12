@@ -12,6 +12,6 @@ type GeoPoint struct {
 func main() {
 	fmt.Println("first")
 	deferFun()
-	fmt.Println(GeoPoint{0, 5})
+	playingWithStruct()
 	fmt.Println("last")
 }
