@@ -12,6 +12,10 @@ func ranges() {
 	for _, value := range pow {
 		fmt.Printf("%d\n", value)
 	}
+
+	for i := range pow {
+		fmt.Printf("%d\n", i)
+	}
 }
 func main() {
 	fmt.Println("first")
