@@ -22,14 +22,20 @@ func split(sum int) (x, y int) {
 	return
 }
 
-func main() {
-	fmt.Println("Welcome to the playground!")
-	fmt.Println("Testing an add function ", add(2, 4))
+func deferFun() {
+	defer fmt.Println("Welcome to the playground!")
+	defer fmt.Println("Testing an add function ", add(2, 4))
 	a, b := swap("world", "hello")
-	fmt.Println("Apparently, we love tuples? ", a, b)
+	defer fmt.Println("Apparently, we love tuples? ", a, b)
 
-	fmt.Println(split(17))
-	fmt.Println(math.Max(4, 1))
+	defer fmt.Println(split(17))
+	defer fmt.Println(math.Max(4, 1))
 
-	fmt.Println(runtime.GOOS, runtime.GOARCH)
+	defer fmt.Println(runtime.GOOS, runtime.GOARCH)
+}
+
+func main() {
+	fmt.Println("first")
+	defer deferFun()
+	fmt.Println("last")
 }
