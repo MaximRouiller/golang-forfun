@@ -1,4 +1,4 @@
 @echo off
 
-go build ./src/hello.go
+go build ./src/hello
 hello.exe
