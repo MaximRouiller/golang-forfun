@@ -34,6 +34,11 @@ func deferFun() {
 	defer fmt.Println(runtime.GOOS, runtime.GOARCH)
 }
 
+type GeoPoint struct {
+	X float32
+	Y float32
+}
+
 func playingWithStruct() {
 	point := GeoPoint{X: 0, Y: 5}
 	fmt.Println(point)
