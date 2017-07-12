@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"math"
+	"runtime"
 )
 
 // because I need a function for that.
@@ -27,4 +29,7 @@ func main() {
 	fmt.Println("Apparently, we love tuples? ", a, b)
 
 	fmt.Println(split(17))
+	fmt.Println(math.Max(4, 1))
+
+	fmt.Println(runtime.GOOS, runtime.GOARCH)
 }
