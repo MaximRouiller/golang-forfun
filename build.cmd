@@ -1,3 +1,4 @@
 @echo off
 
-go build ./src/hello
+REM go build ./src/hello
+go build ./src/simple-api
